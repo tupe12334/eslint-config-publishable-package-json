@@ -1,0 +1,61 @@
+{
+  "name": "eslint-config-publishable-package-json",
+  "version": "0.0.0",
+  "description": "ESLint config for validating package.json files for publishable packages",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "spell": "cspell lint '**/*.{ts,js,md,json}' --gitignore",
+    "spell:check": "cspell lint '**/*.{ts,js,md,json}' --gitignore",
+    "prepare": "husky",
+    "release": "release-it"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "package.json",
+    "validation",
+    "publishable",
+    "npm"
+  ],
+  "author": "tupe12334",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@10.21.0",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.8",
+    "cspell": "^9.3.0",
+    "eslint": "^9.39.1",
+    "eslint-config-agent": "^1.7.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "release-it": "^19.0.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  }
+}
