@@ -39,6 +39,14 @@
   ],
   "author": "tupe12334",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tupe12334/eslint-config-publishable-package-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tupe12334/eslint-config-publishable-package-json/issues"
+  },
+  "homepage": "https://github.com/tupe12334/eslint-config-publishable-package-json#readme",
   "engines": {
     "node": ">=18.0.0"
   },
