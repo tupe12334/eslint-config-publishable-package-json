@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-publishable-package-json",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "ESLint config for validating package.json files for publishable packages",
   "type": "module",
   "main": "./dist/index.js",
