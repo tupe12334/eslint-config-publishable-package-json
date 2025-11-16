@@ -37,6 +37,7 @@ jobs:
       run: pnpm format:check
 
     - name: Spell check
+      if: matrix.node-version != 18
       run: pnpm spell
 
     - name: Run tests
