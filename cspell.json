@@ -9,7 +9,10 @@
     "eslint",
     "tsconfig",
     "esbenp",
-    "publishable"
+    "publishable",
+    "myorg",
+    "prepublishOnly",
+    "monorepo"
   ],
   "ignorePaths": [
     "node_modules",
